@@ -1,0 +1,248 @@
+[
+  {
+    "assetType": "compute.googleapis.com/Instance",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "web-1",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "prod",
+      "owner": "team-web",
+      "cost-center": "cc-1042",
+      "app": "storefront"
+    },
+    "location": "us-central1-a",
+    "name": "//compute.googleapis.com/projects/acme-prod-1234/zones/us-central1-a/instances/web-1",
+    "networkTags": [
+      "web",
+      "ssh"
+    ],
+    "organization": "organizations/281946503718",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/acme-prod-1234",
+    "project": "projects/482915370164",
+    "state": "RUNNING"
+  },
+  {
+    "assetType": "compute.googleapis.com/Instance",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "web-2",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "production",
+      "owner": "team-web",
+      "cost-center": "1042"
+    },
+    "location": "us-central1-a",
+    "name": "//compute.googleapis.com/projects/acme-prod-1234/zones/us-central1-a/instances/web-2",
+    "networkTags": [
+      "web"
+    ],
+    "organization": "organizations/281946503718",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/acme-prod-1234",
+    "project": "projects/482915370164",
+    "state": "RUNNING"
+  },
+  {
+    "assetType": "compute.googleapis.com/Instance",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "batch-worker-7",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "prod",
+      "cost-center": ""
+    },
+    "location": "us-central1-b",
+    "name": "//compute.googleapis.com/projects/acme-prod-1234/zones/us-central1-b/instances/batch-worker-7",
+    "organization": "organizations/281946503718",
+    "parentAssetType": "cloudresourcemanager.googleapis.com/Project",
+    "parentFullResourceName": "//cloudresourcemanager.googleapis.com/projects/acme-prod-1234",
+    "project": "projects/482915370164",
+    "state": "TERMINATED"
+  },
+  {
+    "assetType": "compute.googleapis.com/Disk",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "web-1",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "prod",
+      "owner": "team-web",
+      "cost-center": "cc-1042"
+    },
+    "location": "us-central1-a",
+    "name": "//compute.googleapis.com/projects/acme-prod-1234/zones/us-central1-a/disks/web-1",
+    "organization": "organizations/281946503718",
+    "project": "projects/482915370164"
+  },
+  {
+    "assetType": "storage.googleapis.com/Bucket",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "acme-prod-1234-assets",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "prod",
+      "owner": "team-web",
+      "cost-center": "cc-1042",
+      "data-class": "public"
+    },
+    "location": "us",
+    "name": "//storage.googleapis.com/acme-prod-1234-assets",
+    "organization": "organizations/281946503718",
+    "project": "projects/482915370164"
+  },
+  {
+    "assetType": "storage.googleapis.com/Bucket",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "acme-prod-1234-exports",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "prod",
+      "owner": "data-eng",
+      "cost-center": "cc-2210"
+    },
+    "location": "us-central1",
+    "name": "//storage.googleapis.com/acme-prod-1234-exports",
+    "organization": "organizations/281946503718",
+    "project": "projects/482915370164"
+  },
+  {
+    "assetType": "bigquery.googleapis.com/Dataset",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "analytics",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "location": "US",
+    "name": "//bigquery.googleapis.com/projects/acme-prod-1234/datasets/analytics",
+    "organization": "organizations/281946503718",
+    "project": "projects/482915370164"
+  },
+  {
+    "assetType": "sqladmin.googleapis.com/Instance",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "orders-db",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "prod",
+      "owner": "payments",
+      "cost-center": "cc-3001"
+    },
+    "location": "us-central1",
+    "name": "//sqladmin.googleapis.com/projects/acme-prod-1234/instances/orders-db",
+    "organization": "organizations/281946503718",
+    "project": "projects/482915370164",
+    "state": "RUNNABLE"
+  },
+  {
+    "assetType": "pubsub.googleapis.com/Topic",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "orders",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "prod",
+      "owner": "team-payments",
+      "cost-center": "cc-3001"
+    },
+    "location": "global",
+    "name": "//pubsub.googleapis.com/projects/acme-prod-1234/topics/orders",
+    "organization": "organizations/281946503718",
+    "project": "projects/482915370164"
+  },
+  {
+    "assetType": "cloudresourcemanager.googleapis.com/Project",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "acme-prod-1234",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "prod",
+      "owner": "platform",
+      "cost-center": "cc-0001"
+    },
+    "location": "global",
+    "name": "//cloudresourcemanager.googleapis.com/projects/acme-prod-1234",
+    "organization": "organizations/281946503718",
+    "project": "projects/482915370164",
+    "state": "ACTIVE"
+  },
+  {
+    "assetType": "compute.googleapis.com/Instance",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "api-staging",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "staging",
+      "owner": "team-api",
+      "cost-center": "cc-1203"
+    },
+    "location": "europe-west1-b",
+    "name": "//compute.googleapis.com/projects/acme-staging-5678/zones/europe-west1-b/instances/api-staging",
+    "organization": "organizations/281946503718",
+    "project": "projects/907315842261",
+    "state": "RUNNING"
+  },
+  {
+    "assetType": "compute.googleapis.com/Instance",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "gke-staging-pool-1-3f9a2c1d-x7k2",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "goog-gke-node": ""
+    },
+    "location": "europe-west1-b",
+    "name": "//compute.googleapis.com/projects/acme-staging-5678/zones/europe-west1-b/instances/gke-staging-pool-1-3f9a2c1d-x7k2",
+    "organization": "organizations/281946503718",
+    "project": "projects/907315842261",
+    "state": "RUNNING"
+  },
+  {
+    "assetType": "storage.googleapis.com/Bucket",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "acme-staging-5678-tmp",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "labels": {
+      "env": "dev",
+      "owner": "team-api"
+    },
+    "location": "europe-west1",
+    "name": "//storage.googleapis.com/acme-staging-5678-tmp",
+    "organization": "organizations/281946503718",
+    "project": "projects/907315842261"
+  },
+  {
+    "assetType": "compute.googleapis.com/Firewall",
+    "createTime": "2025-04-02T14:21:07Z",
+    "displayName": "allow-ssh-iap",
+    "folders": [
+      "folders/615204837291"
+    ],
+    "location": "global",
+    "name": "//compute.googleapis.com/projects/acme-staging-5678/global/firewalls/allow-ssh-iap",
+    "organization": "organizations/281946503718",
+    "project": "projects/907315842261"
+  }
+]

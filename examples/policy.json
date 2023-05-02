@@ -1,0 +1,47 @@
+{
+  "required": [
+    "env",
+    "owner",
+    "cost-center"
+  ],
+  "allowed_values": {
+    "env": [
+      "prod",
+      "staging",
+      "dev"
+    ]
+  },
+  "patterns": {
+    "cost-center": "^cc-[0-9]{4}$",
+    "owner": "^(team-[a-z0-9-]+|platform|data-eng)$"
+  },
+  "asset_types": {
+    "storage.googleapis.com/Bucket": {
+      "required": [
+        "data-class"
+      ],
+      "allowed_values": {
+        "data-class": [
+          "public",
+          "internal",
+          "restricted"
+        ]
+      }
+    }
+  },
+  "include_asset_types": [
+    "compute.googleapis.com/Instance",
+    "compute.googleapis.com/Disk",
+    "storage.googleapis.com/Bucket",
+    "bigquery.googleapis.com/Dataset",
+    "sqladmin.googleapis.com/Instance",
+    "pubsub.googleapis.com/Topic",
+    "cloudresourcemanager.googleapis.com/Project"
+  ],
+  "ignore": {
+    "name_patterns": [
+      "/instances/gke-"
+    ]
+  },
+  "owner_key": "owner"
+}
