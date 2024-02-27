@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: pip install -e ".[dev]"
+      - name: Test
+        run: pytest -q
+      - name: Run on examples
+        run: |
+          gcp-label-audit examples/resources.json --policy examples/policy.json || test $? -eq 1
+          gcp-label-audit examples/resources.json --policy examples/policy.json --format csv > /dev/null || test $? -eq 1
+          gcp-label-audit examples/resources.json --required env --no-fail
